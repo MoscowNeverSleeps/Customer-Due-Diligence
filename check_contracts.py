@@ -1041,7 +1041,6 @@ def api_finances():
             "Рентабельность собственного капитала, %": safe_div(profit_net, avg_equity) * 100,
             "Оборачиваемость дебиторской задолженности": safe_div(sales, avg_ar),
             "Оборачиваемость кредиторской задолженности": safe_div(cost, avg_ap),
-            "Коэффициент финансового рычага": safe_div((long_liab + short_liab), equity),
         }
 
         Z = current - cash - short_inv - debit
